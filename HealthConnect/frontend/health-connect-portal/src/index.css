@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 220 25% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    --primary: 258 90% 66%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 174 76% 47%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 214 20% 92%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 174 76% 47%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 20% 89%;
+    --input: 214 20% 89%;
+    --ring: 258 90% 66%;
+
+    --radius: 0.75rem;
+
+    /* Custom healthcare colors */
+    --healthcare-purple: 258 90% 66%;
+    --healthcare-teal: 174 76% 47%;
+    --healthcare-pink: 330 80% 65%;
+    --healthcare-orange: 25 95% 53%;
+    --healthcare-blue: 210 100% 60%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(258 90% 66%) 0%, hsl(210 100% 60%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(174 76% 47%) 0%, hsl(210 100% 60%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(330 80% 65%) 0%, hsl(258 90% 66%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(258 90% 66% / 0.1) 0%, hsl(174 76% 47% / 0.1) 100%);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 258 90% 66%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 174 76% 47%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 258 90% 66%;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 14%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 14%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 258 90% 66%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 174 76% 47%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 217 33% 18%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 174 76% 47%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 217 33% 20%;
+    --input: 217 33% 20%;
+    --ring: 258 90% 66%;
+
+    --sidebar-background: 222 47% 11%;
+    --sidebar-foreground: 240 5% 96%;
+    --sidebar-primary: 258 90% 66%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 174 76% 47%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 217 33% 20%;
+    --sidebar-ring: 258 90% 66%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+}
+
+@layer utilities {
+  .hover-lift {
+    @apply transition-all duration-300 hover:scale-[1.02] hover:shadow-xl;
+  }
+  
+  .card-healthcare {
+    @apply rounded-[2rem] bg-card shadow-lg border border-border/50 backdrop-blur-sm;
+  }
+  
+  .gradient-primary {
+    background: linear-gradient(135deg, hsl(258 90% 66%) 0%, hsl(210 100% 60%) 100%);
+  }
+  
+  .gradient-secondary {
+    background: linear-gradient(135deg, hsl(174 76% 47%) 0%, hsl(210 100% 60%) 100%);
+  }
+  
+  .gradient-accent {
+    background: linear-gradient(135deg, hsl(330 80% 65%) 0%, hsl(258 90% 66%) 100%);
+  }
+  
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(258 90% 66%) 0%, hsl(174 76% 47%) 100%);
+  }
+  
+  .glow-purple {
+    box-shadow: 0 0 30px hsl(258 90% 66% / 0.4);
+  }
+  
+  .glow-teal {
+    box-shadow: 0 0 30px hsl(174 76% 47% / 0.4);
+  }
+}
