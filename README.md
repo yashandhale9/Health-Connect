@@ -190,6 +190,16 @@ HealthConnect/
 5. Push to the branch (`git push origin feature/amazing-feature`)
 6. Open a Pull Request
 
+## Screenshots
+
+<img width="500" height="250" alt="Screenshot (100)" src="https://github.com/user-attachments/assets/fabe6b27-cd65-40d4-8860-d1c5d1ea491a" />
+<img width="500" height="250" alt="Screenshot (99)" src="https://github.com/user-attachments/assets/2c20a335-4c36-4704-a5a5-69e19c96646c" />
+<img width="500" height="250" alt="Screenshot (98)" src="https://github.com/user-attachments/assets/1c2e86a5-46c8-4688-895a-a6629fd4d9f5" />
+<img width="500" height="250" alt="Screenshot (97)" src="https://github.com/user-attachments/assets/ff1c229e-12ab-46a3-82c8-09e7f4610ce1" />
+<img width="500" height="250" alt="Screenshot (96)" src="https://github.com/user-attachments/assets/ce16bc30-e379-4c5c-bfa2-d8707ba36601" />
+<img width="500" height="250" alt="Screenshot (235)" src="https://github.com/user-attachments/assets/cab630b4-3781-41e6-a77d-32a68e043220" />
+
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
