@@ -114,31 +114,6 @@ A comprehensive healthcare management system that connects patients and healthca
 - `GET /api/doctors/me/` - Get current doctor's profile
 - `PUT/PATCH /api/doctors/update_profile/` - Update doctor profile
 
-## User Accounts (Pre-configured)
-
-The system comes with pre-configured accounts for testing:
-
-### Doctor Account
-- **Username**: `dr_yashandhale`
-- **Email**: `yash@123`
-- **Password**: `yash@123`
-
-### Patient Accounts
-- **Vedant**:
-  - Username: `vedant_p`
-  - Email: `vedant@123`
-  - Password: `vedant@123`
-  
-- **Yogesh**:
-  - Username: `yogesh_p`
-  - Email: `yogesh@123`
-  - Password: `yogesh@123`
-  
-- **Atharva**:
-  - Username: `atharva_p`
-  - Email: `atharva@123`
-  - Password: `atharva@123`
-
 ## Usage
 
 1. Start both backend and frontend servers
